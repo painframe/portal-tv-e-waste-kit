@@ -1,0 +1,83 @@
+name: docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Lint every bash script
+        run: |
+          set -e
+          for f in scripts/*.sh; do
+            echo "==> bash -n $f"
+            bash -n "$f"
+          done
+
+      - name: ASCII-guard every PowerShell script
+        run: |
+          python3 - <<'PY'
+          import sys, pathlib
+          for p in pathlib.Path('scripts').glob('*.ps1'):
+              try:
+                  p.read_bytes().decode('ascii', 'strict')
+              except UnicodeDecodeError as e:
+                  print(f"NON-ASCII: {p}", file=sys.stderr)
+                  sys.exit(1)
+          print("all .ps1 are pure ASCII")
+          PY
+
+      - name: Install PowerShell
+        uses: microsoft/setup-pwsh@v1
+        with:
+          pwsh-version: '7.4'
+
+      - name: Parse-check every PowerShell script
+        run: |
+          set -e
+          for f in scripts/*.ps1; do
+            echo "==> pwsh -NoProfile parse $f"
+            pwsh -NoProfile -Command "[scriptblock]::Create((Get-Content -Raw $f))"
+          done
+
+      - name: Install MkDocs
+        run: pip install -r requirements-docs.txt
+
+      - name: MkDocs strict build
+        run: mkdocs build --strict
+      - name: Round-2 artifact structural sanity check
+        # The body is verified at write-time (per AGENTS.md). CI confirms only
+        # that the on-disk file is parseable Markdown AND contains the canonical
+        # anchors round-2 is known to carry ([S6] = round-1 pointer,
+        # 'Decision table' = the decision matrix). If those anchors disappear,
+        # the body has been rewritten by mistake.
+        run: |
+          python3 - <<'PY'
+          import sys
+          from pathlib import Path
+          p = Path('docs/research/portal-1080p-camera-paths.md')
+          if not p.exists():
+              print("missing portal-1080p-camera-paths.md", file=sys.stderr); sys.exit(1)
+          text = p.read_text(encoding='ascii', errors='strict')
+          # 1. parseable Markdown: '---' (setext/divider) should appear;
+          #    a hostile rewriting that emits raw HTML or escapes the divider
+          #    would break MkDocs strict mode anyway. We're just adding belt
+          #    and braces here.
+          if text.count('---') < 3:
+              print("fewer than 3 '---' dividers - body may have been rewritten", file=sys.stderr); sys.exit(1)
+          # 2. canonical round-2 anchors:
+          for marker in ('[S6]', 'Decision table', '## How to use this'):
+              if marker not in text:
+                  print(f"missing canonical marker: {marker!r}", file=sys.stderr); sys.exit(1)
+          # 3. the body must contain a 'Verification leads' section (V1-V4 list)
+          if 'Verification leads' not in text:
+              print("missing 'Verification leads' section", file=sys.stderr); sys.exit(1)
+          print('round-2 artifact sanity check passed')
+          PY

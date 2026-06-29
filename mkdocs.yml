@@ -1,0 +1,64 @@
+site_name: Portal TV e-waste kit
+site_description: >-
+  A standalone, host-side toolkit that keeps a Meta Portal TV useful after
+  Meta end-of-lifed the platform. Companion to the immortal home-screen
+  project and the portal-tv-webcam USB-tunnel webcam project.
+site_url: https://starbrightlab.github.io/portal-tv-e-waste-kit/
+repo_url: https://github.com/starbrightlab/portal-tv-e-waste-kit
+repo_name: starbrightlab/portal-tv-e-waste-kit
+edit_uri: edit/main/docs/
+copyright: >-
+  portal-tv-e-waste-kit is an independent community project - not affiliated
+  with, endorsed by, or sponsored by Meta.
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.copy
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Guide: keeping-portal-alive.md
+  - Research:
+      - Index: research/index.md
+      - Round 2 (load-bearing reference): research/portal-1080p-camera-paths.md

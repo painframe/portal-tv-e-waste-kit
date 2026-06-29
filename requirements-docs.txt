@@ -1,0 +1,5 @@
+mkdocs>=1.6
+mkdocs-material>=9.5
+# Used by scripts/portal-obs-upscale-apply.py to apply the OBS RTX Super
+# Resolution filter chain via obs-websocket (called by the bash + ps1 wrappers).
+websocket-client>=1.8

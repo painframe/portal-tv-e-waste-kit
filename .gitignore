@@ -1,0 +1,20 @@
+# Python venv used for MkDocs local builds
+.venv-build/
+.venv*/
+__pycache__/
+*.pyc
+*.pyo
+
+# Local probes / logs the kit can leave around
+*.mkv
+*.log
+*.tmp
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# docs build
+/site/
