@@ -34,10 +34,22 @@ jobs:
           print("all .ps1 are pure ASCII")
           PY
 
-      - name: Install PowerShell
-        uses: microsoft/setup-pwsh@v1
-        with:
-          pwsh-version: '7.4'
+      - name: Install PowerShell (apt fallback)
+        # The plan called for microsoft/setup-pwsh@v1, but that action does not
+        # exist on the GitHub Marketplace. The documented contingency is a
+        # manual apt install of the powershell-preview package (the
+        # Microsoft repository provides PowerShell 7.4+ for Ubuntu 24.04).
+        run: |
+          set -e
+          if ! command -v pwsh >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq wget apt-transport-https software-properties-common
+            wget -q https://packages.microsoft.com/config/ubuntu/24.04/packages-microsoft-prod.deb -O /tmp/ms-prod.deb
+            sudo dpkg -i /tmp/ms-prod.deb
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq powershell
+          fi
+          pwsh -NoProfile -Command '$PSVersionTable.PSVersion'
 
       - name: Parse-check every PowerShell script
         run: |
