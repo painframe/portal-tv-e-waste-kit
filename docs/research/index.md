@@ -35,7 +35,7 @@ Portal firmware permits USB host mode for UVC class devices (V2 verdict, runnabl
 in under a minute via the probe).
 
 **What it didn't:** round 2 is still a research artifact, not a code path. The kit's
-probe ([`scripts/portal-probe.sh`](https://github.com/starbrightlab/portal-tv-e-waste-kit/blob/main/scripts/portal-probe.sh))
+probe ([`scripts/portal-probe.sh`](https://github.com/painframe/portal-tv-e-waste-kit/blob/main/scripts/portal-probe.sh))
 runs the four `dumpsys`/`getprop` verification leads on a real Portal and prints what
 is and isn't feasible on that device. The probe is round 2 made runnable.
 

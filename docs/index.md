@@ -13,7 +13,7 @@ project - same author, same host.
 - **[Research: portal-1080p-camera-paths.md](research/portal-1080p-camera-paths.md)** -
   the round-2 evidence base. Load-bearing; every decision in the guide traces back
   here.
-- **Scripts** under [`scripts/`](https://github.com/starbrightlab/portal-tv-e-waste-kit/tree/main/scripts) -
+- **Scripts** under [`scripts/`](https://github.com/painframe/portal-tv-e-waste-kit/tree/main/scripts) -
   the probe and three path helpers.
 
 ## What this kit gives you
@@ -36,5 +36,5 @@ internal camera at >720p. Those are firmware facts, not bugs.
 
 `portal-tv-e-waste-kit` is an independent community project, **not affiliated with
 or endorsed by Meta**. See
-[DISCLAIMER.md](https://github.com/starbrightlab/portal-tv-e-waste-kit/blob/main/DISCLAIMER.md)
+[DISCLAIMER.md](https://github.com/painframe/portal-tv-e-waste-kit/blob/main/DISCLAIMER.md)
 (in the repo root) for the full scope and use-at-your-own-risk text.

@@ -3,9 +3,9 @@ site_description: >-
   A standalone, host-side toolkit that keeps a Meta Portal TV useful after
   Meta end-of-lifed the platform. Companion to the immortal home-screen
   project and the portal-tv-webcam USB-tunnel webcam project.
-site_url: https://starbrightlab.github.io/portal-tv-e-waste-kit/
-repo_url: https://github.com/starbrightlab/portal-tv-e-waste-kit
-repo_name: starbrightlab/portal-tv-e-waste-kit
+site_url: https://painframe.github.io/portal-tv-e-waste-kit/
+repo_url: https://github.com/painframe/portal-tv-e-waste-kit
+repo_name: painframe/portal-tv-e-waste-kit
 edit_uri: edit/main/docs/
 copyright: >-
   portal-tv-e-waste-kit is an independent community project - not affiliated

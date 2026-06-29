@@ -13,7 +13,7 @@ By participating you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md)
 ## Ways to contribute
 
 - **Report a bug** — open an
-  [issue](https://github.com/starbrightlab/portal-tv-e-waste-kit/issues). Tell us
+  [issue](https://github.com/painframe/portal-tv-e-waste-kit/issues). Tell us
   your Portal TV model and the `dumpsys media.camera` excerpt; it matters a lot
   when the camera HAL is the suspect.
 - **Send a pull request** — see below.

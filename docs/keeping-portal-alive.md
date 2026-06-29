@@ -163,7 +163,7 @@ the correct behaviour and matches the privacy guarantee.
 6. **Use it in OBS / Zoom / Meet / Teams.** No driver install, no SDK, just a standard
    UVC webcam.
 
-The helper [`scripts/portal-hdmi-capture.sh`](https://github.com/starbrightlab/portal-tv-e-waste-kit/blob/main/scripts/portal-hdmi-capture.sh)
+The helper [`scripts/portal-hdmi-capture.sh`](https://github.com/painframe/portal-tv-e-waste-kit/blob/main/scripts/portal-hdmi-capture.sh)
 (or `.ps1`) verifies the host sees the capture and pipes a short test grab to
 `stream.mkv` so you can confirm the path end-to-end before plugging it into OBS.
 
@@ -214,7 +214,7 @@ probe's V2 verdict is the deciding experiment.
 5. **If V2 reports the UVC webcam is NOT visible**: don't fight it — fall back to the
    OBS upscale path (#3).
 
-The helper [`scripts/portal-uvc-external.sh`](https://github.com/starbrightlab/portal-tv-e-waste-kit/blob/main/scripts/portal-uvc-external.sh)
+The helper [`scripts/portal-uvc-external.sh`](https://github.com/painframe/portal-tv-e-waste-kit/blob/main/scripts/portal-uvc-external.sh)
 automates steps 3-4 and, when a UVC webcam is visible, launches IP Webcam pointed at
 the external camera.
 
@@ -243,7 +243,7 @@ project — no software modifications, no brick risk, ~15-30 minute setup.
 
 4. **Use OBS Virtual Camera as the webcam in Zoom/Meet.**
 
-The helper [`scripts/portal-obs-upscale.sh`](https://github.com/starbrightlab/portal-tv-e-waste-kit/blob/main/scripts/portal-obs-upscale.sh)
+The helper [`scripts/portal-obs-upscale.sh`](https://github.com/painframe/portal-tv-e-waste-kit/blob/main/scripts/portal-obs-upscale.sh)
 (or `.ps1`) is a thin wrapper that extends the existing `portal-tv-webcam` setup by
 applying this filter chain automatically on launch.
 
@@ -292,7 +292,7 @@ round-1 axioms it takes as given. There is no third layer.
 
 ## Cross-links
 
-- [`README.md`](https://github.com/starbrightlab/portal-tv-e-waste-kit/blob/main/README.md) - repo-level tour.
+- [`README.md`](https://github.com/painframe/portal-tv-e-waste-kit/blob/main/README.md) - repo-level tour.
 - [`research/index.md`](research/index.md) — research-folder index.
 - [`research/portal-1080p-camera-paths.md`](research/portal-1080p-camera-paths.md)
   — round 2 (load-bearing reference; body byte-stable).

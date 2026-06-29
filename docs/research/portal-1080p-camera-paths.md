@@ -17,7 +17,7 @@
 
 This file is **load-bearing reference** for every path decision in
 [`docs/keeping-portal-alive.md`](../keeping-portal-alive.md) and every verdict the
-[`scripts/portal-probe.sh`](https://github.com/starbrightlab/portal-tv-e-waste-kit/blob/main/scripts/portal-probe.sh) probe prints. Structure:
+[`scripts/portal-probe.sh`](https://github.com/painframe/portal-tv-e-waste-kit/blob/main/scripts/portal-probe.sh) probe prints. Structure:
 
 1. **Framing pushback (Phase 0.5)** - why "1080p by any means" may be the wrong goal.
 2. **Constraints (C1-C7)** - what is provable from static analysis vs. what needs a device.
