@@ -1,0 +1,17 @@
+name: docs-deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install MkDocs + deps
+        run: pip install -r requirements-docs.txt
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --remote-branch gh-pages

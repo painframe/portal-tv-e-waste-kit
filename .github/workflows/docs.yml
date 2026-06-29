@@ -77,7 +77,7 @@ jobs:
           p = Path('docs/research/portal-1080p-camera-paths.md')
           if not p.exists():
               print("missing portal-1080p-camera-paths.md", file=sys.stderr); sys.exit(1)
-          text = p.read_text(encoding='ascii', errors='strict')
+          text = p.read_text(encoding='utf-8', errors='strict')
           # 1. parseable Markdown: '---' (setext/divider) should appear;
           #    a hostile rewriting that emits raw HTML or escapes the divider
           #    would break MkDocs strict mode anyway. We're just adding belt
