@@ -174,8 +174,15 @@ The helper [`scripts/portal-hdmi-capture.sh`](https://github.com/painframe/porta
 - **Capture card shows up but image is black** → press the Portal's hardware privacy
   button on the camera bar (it physically disconnects the camera; HDMI shows a black
   frame because the Portal's UI is showing a privacy screen).
-- **Audio: HDMI capture does NOT include the Portal's mic.** Use a separate USB or
-  Bluetooth microphone. Same caveat as `portal-tv-webcam`.
+- **Audio: HDMI capture does NOT include the Portal's mic** — HDMI carries display
+  audio, not the microphone, so this is true regardless of permissions. Capture the
+  mic separately on the host (USB/Bluetooth), **or** read it in a sideloaded app:
+  the built-in **single-channel mic works** for your own apps with plain
+  `RECORD_AUDIO` (grant it: `pm grant <pkg> android.permission.RECORD_AUDIO`) —
+  confirmed by Meta's official Portal build skill. Only the far-field beamformed
+  array ("Hey Portal" pickup) is locked, behind the Meta-signed
+  `com.facebook.alohasdk.permission.RECORD_AUDIO_PRIVILEGED`. The earlier
+  "mic → silence" note was a missing-grant artefact, not a hard gate.
 
 ## Path 2: USB-C UVC external webcam {#uvc}
 

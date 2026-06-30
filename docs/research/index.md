@@ -10,8 +10,11 @@ Both rounds persist as decision-complete artifacts; the kit's user-facing guide
 
 **What it answered:** that the 720p camera cap on Portal TV is enforced **below the
 app, in the camera HAL / firmware, keyed on caller identity** (system UID / platform
-signature); that every privileged Meta capability (HQ camera, mic, config providers,
-silent installer) sits behind `com.facebook.secure` signature trust; and that Android
+signature); that the *privileged* Meta capabilities (HQ >720p / Smart-Camera framing,
+the raw mic-array DSP, config providers, silent installer) sit behind
+`com.facebook.secure` signature trust — **but not** baseline `RECORD_AUDIO` or Camera2,
+which Meta's [official Portal app program](https://developers.meta.com/horizon/documentation/android-apps/portal-development/)
+exposes to sideloaded apps; and that Android
 Device Owner is the one wall that is *not* Meta-exclusive — meaning
 `dpm set-device-owner com.immortal.launcher/.AdminReceiver` is a reachable,
 persistent, root-free install privilege for any app willing to claim the slot.
