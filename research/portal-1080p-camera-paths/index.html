@@ -1,0 +1,952 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A standalone, host-side toolkit that keeps a Meta Portal TV useful after Meta end-of-lifed the platform. Companion to the immortal home-screen project and the portal-tv-webcam USB-tunnel webcam project.">
+      
+      
+      
+        <link rel="canonical" href="https://painframe.github.io/portal-tv-e-waste-kit/research/portal-1080p-camera-paths/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Round 2 (load-bearing reference) - Portal TV e-waste kit</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#portal-tv-720p-camera-paths-round-2-research-artifact" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Portal TV e-waste kit" class="md-header__button md-logo" aria-label="Portal TV e-waste kit" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Portal TV e-waste kit
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Round 2 (load-bearing reference)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/painframe/portal-tv-e-waste-kit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    painframe/portal-tv-e-waste-kit
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Portal TV e-waste kit" class="md-nav__button md-logo" aria-label="Portal TV e-waste kit" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Portal TV e-waste kit
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/painframe/portal-tv-e-waste-kit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    painframe/portal-tv-e-waste-kit
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../keeping-portal-alive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Round 2 (load-bearing reference)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Round 2 (load-bearing reference)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to use this
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to use this
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/painframe/portal-tv-e-waste-kit/edit/main/docs/research/portal-1080p-camera-paths.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<!--
+  Round-2 research artifact. Header and "How to use this" section below are
+  added by the kit; everything below the divider is the verbatim original from
+  the prior research dispatch and MUST NOT be edited in place.
+
+  Prior art / round 1 (the axioms this dispatch builds on):
+  https://github.com/starbrightlab/immortal/blob/main/docs/research/meta-portal-privilege-model.md
+  (also mirrored at docs/research/meta-portal-privilege-model.md in this repo)
+
+  Verification: see `AGENTS.md` "Build, test, and validate" - the on-disk file
+  contains this artifact body verbatim (header + how-to-use prefix allowed).
+-->
+
+<h1 id="portal-tv-720p-camera-paths-round-2-research-artifact">Portal TV &gt;720p camera paths (round-2 research artifact)<a class="headerlink" href="#portal-tv-720p-camera-paths-round-2-research-artifact" title="Permanent link">&para;</a></h1>
+<h2 id="how-to-use-this">How to use this<a class="headerlink" href="#how-to-use-this" title="Permanent link">&para;</a></h2>
+<p>This file is <strong>load-bearing reference</strong> for every path decision in
+<a href="../../keeping-portal-alive/"><code>docs/keeping-portal-alive.md</code></a> and every verdict the
+<a href="https://github.com/painframe/portal-tv-e-waste-kit/blob/main/scripts/portal-probe.sh"><code>scripts/portal-probe.sh</code></a> probe prints. Structure:</p>
+<ol>
+<li><strong>Framing pushback (Phase 0.5)</strong> - why "1080p by any means" may be the wrong goal.</li>
+<li><strong>Constraints (C1-C7)</strong> - what is provable from static analysis vs. what needs a device.</li>
+<li><strong>Mechanisms (M1-M6)</strong> - each candidate path, with confidence levels.</li>
+<li><strong>Decision table</strong> - rows = your situation; columns = candidate paths.</li>
+<li><strong>Recommended commitments (ranked)</strong> - paths 1/2/3, plus the explicit "do NOT pursue" list.</li>
+<li><strong>Testable hypotheses (H1-H6)</strong> - each is runnable on a real Portal in under an hour.</li>
+<li><strong>Verification leads (V1-V5)</strong> - the four <code>dumpsys</code>/<code>getprop</code> commands the probe runs.</li>
+<li><strong>Failure modes</strong> for the recommended path.</li>
+<li><strong>Meta-observation</strong> - what surprised the dispatcher; what round-1 got right and wrong.</li>
+</ol>
+<p>For the user-facing guide (no research jargon), start at
+<a href="../../keeping-portal-alive/"><code>docs/keeping-portal-alive.md</code></a>.</p>
+<hr />
+<h1 id="portal-tv-round-2-actual-feasible-paths-to-720p-camera-access">Portal TV — Round 2: actual feasible paths to &gt;720p camera access<a class="headerlink" href="#portal-tv-round-2-actual-feasible-paths-to-720p-camera-access" title="Permanent link">&para;</a></h1>
+<p><strong>Question</strong>: Given that round-1's static APK analysis proved the 720p camera cap is enforced at the camera HAL / firmware level (keyed on caller identity, not in any user-side APK), what is the actual feasible end-to-end path to obtain &gt;720p camera access on a Facebook Portal TV ("Bishop", Android 9/API 28, Qualcomm Snapdragon 835)?</p>
+<p><strong>Framing pushback (Phase 0.5)</strong>:</p>
+<p>Six reasons the question itself is contested before the recommendations even start:</p>
+<ol>
+<li>
+<p><strong>The 1080p question may not be worth pursuing.</strong> Portal TV's camera is a 12.5MP / 13MP sensor with mediocre low-light performance by 2026 standards. A clean OBS + RTX Super-Resolution 2× upscale of the 720p feed already produces a usable 1080p-class webcam (<a href="https://github.com/svnbjrn/portal-tv-webcam">portal-tv-webcam README.md Step 5</a>). The right goal may be "use the Portal as a webcam at acceptable quality" rather than "break the cap."</p>
+</li>
+<li>
+<p><strong>"Root unlocks the cap" is a <em>static</em> inference, not an <em>observation</em>.</strong> Round 1's analysis proved the gate is below the app, but did not prove the gate is below the <em>Linux UID boundary</em>. The HAL could gate on (a) Android package signature / UID, (b) a fixed package-name allowlist, (c) a <code>ro.portal.camera.*</code> system property, (d) a per-stream <code>CameraMetadata</code> flag set by the framework, or (e) the camera <em>sensor firmware itself</em>. Only (a) and (b) are root-bypassable. (c) and (d) are root-bypassable but require understanding which flag. (e) is unbypassable from the SoC.</p>
+</li>
+<li>
+<p><strong>Hardware angle is real and un-investigated.</strong> Portal TV has a USB-C port that supports USB host mode (Ethernet dongles confirmed working by Meta's own docs; see [S1]). UVC-class external webcams over USB-C OTG are an under-explored bypass. If the host-mode driver binds the UVC camera to <code>CameraManager</code> as a second camera device, the HAL gate likely doesn't apply at all — the cap is a <em>Portal-camera</em> gate, not an <em>all-cameras</em> gate. <strong>This is the highest-value under-investigated angle.</strong></p>
+</li>
+<li>
+<p><strong>The HDMI bypass is the actual answer, not the "interesting" one.</strong> Portal TV is a stick with an HDMI <em>output</em> port (verified — see [S2], [S3]). It outputs its own UI/camera feed at the host TV's resolution (typically 1080p). An HDMI-to-USB capture card on a separate host reads the HDMI signal as a 1080p video stream, bypassing the camera HAL entirely. The community has documented this end-to-end (see Decision Table, Row 1).</p>
+</li>
+<li>
+<p><strong>The homebrew community has solved this.</strong> The "Portal TV as a webcam" problem is already solved at the 720p level by <code>portal-tv-webcam</code> (this repo). The 1080p upgrade is a hardware add-on (~£15 HDMI capture card), not a software breakthrough. The user's question may be lagging the community by a year.</p>
+</li>
+<li>
+<p><strong>Brick risk is asymmetric.</strong> A soft-brick (bootloop, no ADB) on a locked-bootloader MSM8998 is recoverable only via EDL/firehose, which requires Meta's signing key (round-1 evidence). A hard-brick (bootloader-region corruption, anti-rollback tripped) on MSM8998 is <strong>unrecoverable without Meta</strong>. Any root attempt that touches <code>devinfo</code> or the bootloader should be priced against the cost of a replacement Portal TV on eBay (~£30-60 used).</p>
+</li>
+</ol>
+<p><strong>Pushback summary</strong>: the framing-as-stated assumes root is the only path and the goal is 1080p capture. The artifact below commits to: <strong>HDMI capture is the recommended path (no root, no brick, 1080p, AI tracking preserved); UVC is the backup (requires device test); QualPwn is the long-shot (likely patched); the "give up on 1080p" fallback is OBS upscaling the existing 720p feed.</strong></p>
+<hr />
+<p><strong>Versions pinned</strong>:
+- Portal TV (codename "Bishop"): Android 9 / API 28, arm64-v8a, MSM8998 (Snapdragon 835) — confirmed via [round-1 evidence recap].
+- Meta Bishop APK locally extracted: <code>com.facebook.bishop_74.0.0.0.0-621393877</code>, July 2024. <strong>Build fingerprint NOT in APK</strong> — <code>[UNVERIFIED-requires-device]</code>.
+- QualPwn window: CVE-2019-10538/10540 patched in <strong>August 2019 Android Security Bulletin</strong> (Qualcomm security patch level ≥ 2019-08). Patch fix shipped to OEMs June 2019 [S4]. <strong>[UNVERIFIED-requires-device]</strong> for actual Portal patch level.
+- HDMI capture path hardware: verified by 5+ independent sources (Meta own docs, engadget, pcmag, reddit r/FacebookPortal) [S1], [S2], [S3], [S5].</p>
+<p><strong>Scope</strong>:
+- IN: end-to-end paths to ≥1080p camera-quality output usable as a webcam on a separate host. Covers HDMI capture, UVC, root via QualPwn, ADB-only ADB dumpsys recon, surface display capture. Effort and brick-risk for each.
+- OUT: making Portal TV work as a smart display for non-camera apps (immortal launcher scope — separate question). Custom ROM development. Bootloader unlock. Re-litigating the round-1 APK privilege analysis.</p>
+<p><strong>Context</strong> (from <code>~/Downloads/portal/</code>):
+- Round-1 writeup: <code>repos/immortal/docs/research/meta-portal-privilege-model.md</code> — full static analysis of Bishop, Services, System, AppManager. <strong>Treated as axiom.</strong>
+- <code>repos/portal-tv-webcam/</code> — community project for 720p USB-tunnelled webcam. PortalCam app source at <code>PortalCam/app/src/main/java/com/portalcam/</code> (CameraService.java, MjpegServer.java — uses standard <code>Camera2</code>, no vendor HAL hooks).
+- <code>repos/immortal/provisioning/provision.sh</code> — confirms current Portal state is <strong>non-root, ADB-over-USB only</strong>. ADB-over-WiFi is <em>not</em> persistent across reboots ("the TCP port is a root-only system property on these non-root Portals" — provision.sh:104).
+- <code>repos/immortal/docs/first-gen-portals.md</code> — same Gen-1 (Android 9) caveats apply to Portal TV (white-on-white installer dialog, broken on-device "install unknown apps" toggle).</p>
+<p><strong>Constraints</strong> (each cited):
+- <strong>C1</strong>: Camera HAL gates on caller identity (signature / UID) per round-1 static analysis [S6]. <strong>This is a static inference, not an observation</strong> — see Phase 4 pushback below.
+- <strong>C2</strong>: Bootloader is locked, firehose-signed with Meta's key [round-1 evidence recap].
+- <strong>C3</strong>: Portal TV outputs HDMI at the host TV's resolution (typically 1080p) — confirmed by Meta docs and 5+ independent sources [S1], [S2], [S3], [S5].
+- <strong>C4</strong>: ADB shell on Portal TV is non-root; <code>dumpsys</code>, <code>pm</code>, <code>dpm</code> are accessible. No Magisk/KernelSU installed by default [provision.sh, current state].
+- <strong>C5</strong>: USB-C port supports USB host mode (Ethernet dongles work); UVC webcam support is unconfirmed but plausible.
+- <strong>C6</strong>: Meta has stated Portal TV software support continues (per meta.com), so the device-owner slot may change with OTAs.
+- <strong>C7</strong>: Sensor is physically 12.5MP/13MP — the 720p cap is the HAL, not the sensor [round-1 evidence recap].</p>
+<p><strong>Mechanisms</strong> (not slogans):</p>
+<ul>
+<li>
+<p><strong>M1 (HDMI capture bypass)</strong> — confidence: <strong>high</strong>. The Portal TV's HDMI output is the SoC's display pipeline output (SurfaceFlinger → HWC → HDMI transmitter). The Portal <em>app</em>'s camera frame is composited into the display surface at the Portal's own resolution (1080p for the UI). An HDMI-to-USB capture card taps the physical HDMI signal at the cable, after the Portal's own display compositor has rendered it. The camera HAL's caller-identity gate is irrelevant because the captured frames never traverse the camera HAL — they are <em>display</em> pixels. AI tracking (which is rendered by Bishop into the display surface) is preserved. Latency = Portal display frame time (~33 ms at 30 fps) + capture card hardware buffer (~50-100 ms typical USB HDMI grabbers) + USB transfer (~1 frame). Total ~120-180 ms — usable for calls, marginal for gaming. <strong>Verified mechanism</strong>: HDMI capture cards are dumb hardware that re-emit the HDMI TMDS signal as UVC-over-USB; the host sees a standard webcam, no driver hacking required.</p>
+</li>
+<li>
+<p><strong>M2 (UVC external webcam over USB-C)</strong> — confidence: <strong>medium</strong>. If the USB-C port supports USB host mode with UVC class driver binding, an external webcam enumerates as a standard Android camera device (<code>/dev/videoN</code>). Android's <code>Camera2</code> framework then exposes it to apps via the standard <code>CameraManager</code>. The Portal's custom HAL gate on the <em>internal</em> camera is bypassed because the external UVC device goes through the generic <code>uvcvideo</code> kernel driver → <code>android.hardware.camera2</code> provider, not the Portal-specific <code>com.qualcomm.qti.camera</code> HAL. <strong>Critical unknown</strong>: whether Meta's firmware disables USB host mode by default (no mention in round-1 evidence), whether the SoC exposes USB host lines on the USB-C port (likely yes — Ethernet dongles work), and whether the <code>uvcvideo</code> module is loaded.</p>
+</li>
+<li>
+<p><strong>M3 (QualPwn root → bypass signature gate)</strong> — confidence: <strong>medium that it once worked, low that it works today</strong>. CVE-2019-10538 (WLAN buffer overflow → kernel code execution) and CVE-2019-10540 (modem buffer overflow → code execution) affected SD835 / MSM8998 [S4]. Patch level ≤ 2019-07 vulnerable; ≥ 2019-08 fixed. Portal TV shipped November 2019; even if shipped unpatched, every subsequent OTA would have brought in the fix. <strong>The "root unlocks the camera" inference is conditional on the gate being (a) signature/UID-based, not (c) property-based or (e) sensor-firmware-based</strong> [S6]. Mechanism: once running as <code>system</code> UID, the calling identity for <code>CameraManager.openCamera()</code> matches Meta's app, the HAL serves the full capability list, and <code>CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP</code> advertises 1920×1080 sizes. <strong>Three things must all be true</strong>: (i) Portal patch level &lt; 2019-08, (ii) QualPwn exploit works against Portal's specific WLAN firmware revision, (iii) HAL gates on signature not property.</p>
+</li>
+<li>
+<p><strong>M4 (SurfaceFlinger virtual display capture)</strong> — confidence: <strong>low (requires root)</strong>. Android's <code>MediaProjection</code> API captures any display surface without going through the camera HAL. On a non-root device, <code>MediaProjection</code> of the Portal's own display would capture the 1080p UI — including the camera feed Bishop is showing. The MediaProjection output is a <code>VirtualDisplay</code> that any app can read via <code>ImageReader</code>. <strong>The catch</strong>: <code>MediaProjection</code> on a TV stick needs to be initiated by a foreground app; there is no <code>system</code>-side daemon to capture continuously. So this is "build an app that runs on the Portal and streams its own display out" — which is essentially <code>portal-tv-webcam</code>'s PortalCam but reading the display surface instead of the camera. Likely gives the same 720p feed (because Bishop's display surface at 720p is what gets composited — the cap propagates from camera HAL to the input surface, not the display compositor).</p>
+</li>
+<li>
+<p><strong>M5 (DPM device-owner + privileged install + system-UID hoist)</strong> — confidence: <strong>low for camera, high for install</strong>. Round-1's recommendation is to claim <code>dpm set-device-owner com.immortal.launcher/.AdminReceiver</code> [S6]. This <em>grants</em> silent install + persistent privileged state. It does <strong>not</strong> elevate the app to system UID; it grants <code>DevicePolicyManager</code> privileges only. Camera HAL gate is independent. So device-owner is the correct path for <em>install</em> persistence (round-1 finding) but <strong>not</strong> for camera quality.</p>
+</li>
+<li>
+<p><strong>M6 (Vendor HAL direct call)</strong> — confidence: <strong>low (requires dump)</strong>. Qualcomm's <code>libmmcamera_interface</code> and similar vendor HALs expose hidden functions not bound to the AOSP <code>Camera2</code> framework. Calling these directly via JNI from an app requires linking the vendor <code>.so</code> files, which are only present in the Portal's system partition. On a non-root device, the system partition is read-only and the <code>.so</code> is not in the app's linker path. <strong>Could work with root</strong>: dump the vendor <code>.so</code>, find a hidden function that bypasses the capability gate, call it. No public documentation; would require reverse engineering the Portal's specific build. High effort, uncertain payoff, depends on whether the gate is in the framework wrapper or the HAL itself.</p>
+</li>
+</ul>
+<p><strong>Canonical sources</strong>:
+- <strong>CVE-2019-10538, CVE-2019-10540</strong> — Tencent Blade Team disclosure; Qualcomm security bulletin June 2019; August 2019 Android Security Bulletin patch level. Authoritative references: NIST NVD entries CVE-2019-10538 (https://nvd.nist.gov/vuln/detail/CVE-2019-10538) and CVE-2019-10540 (https://nvd.nist.gov/vuln/detail/CVE-2019-10540), confirmed by [S4].
+- <strong>Qualcomm security patch level convention</strong> — defined in Android Security Bulletin (https://source.android.com/docs/security/bulletin). Patch level YYYY-MM-01 means "fixes through YYYY-MM applied".
+- <strong>HDMI capture card ecosystem</strong> — generic UVC-over-USB HDMI grabber class; reference: Epiphan, Elgato, generic Chinese dongles [S5].
+- <strong>Meta Portal TV hardware spec</strong> — Meta's own support page confirms HDMI output + USB-C host mode [S1].
+- <strong>Round-1 static APK analysis</strong> — <code>repos/immortal/docs/research/meta-portal-privilege-model.md</code>, by the same author. Treated as pinned prior art [S6].</p>
+<p><strong>Disagreements in the wild</strong>: None significant on the <em>feasibility</em> axes (community agrees HDMI capture works, agrees QualPwn worked once, agrees root is hard on locked bootloader). One latent disagreement worth naming: <strong>whether root alone bypasses the camera cap is unproven</strong>. The community assumption (carried into round-1) is "caller identity = signature, so system UID bypasses." This is the most likely answer but not tested. If the gate is actually in the camera sensor firmware (option (e) in M3), no amount of root helps. The empirical test (<code>dumpsys media.camera</code> as different UIDs) is the deciding experiment and has not been run.</p>
+<p><strong>Decision table</strong> (rows = user's situation; columns = candidate paths):</p>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>HDMI capture (M1)</th>
+<th>UVC external (M2)</th>
+<th>QualPwn root (M3)</th>
+<th>Virtual display (M4)</th>
+<th>Vendor HAL direct (M6)</th>
+<th>OBS upscale current 720p</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User has TV with HDMI input</td>
+<td><strong>WORKS, 1080p, 1-2hr setup</strong> [S5], [S7]</td>
+<td>WORKS if USB host mode enabled</td>
+<td>Requires Wi-Fi proximity to attacker</td>
+<td>Captures same 720p feed</td>
+<td>n/a</td>
+<td><strong>WORKS today, no setup, ~1080p quality</strong> [S7]</td>
+</tr>
+<tr>
+<td>User wants AI tracking</td>
+<td>Preserved (rendered into HDMI)</td>
+<td>Lost (new camera has no Meta SDK)</td>
+<td>Preserved post-root</td>
+<td>Preserved</td>
+<td>Preserved</td>
+<td>Lost (no AI on raw 720p)</td>
+</tr>
+<tr>
+<td>Brick risk</td>
+<td>None</td>
+<td>None</td>
+<td>Recoverable soft-brick; <strong>hard-brick unrecoverable</strong></td>
+<td>None</td>
+<td>None (with root)</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Effort</td>
+<td>1-2 hours + £15 hardware</td>
+<td>1-2 hours + £20-40 webcam</td>
+<td>Days + high skill</td>
+<td>Hours</td>
+<td>Weeks</td>
+<td>15 minutes</td>
+</tr>
+<tr>
+<td>True 1080p</td>
+<td>Yes (HDMI is 1080p)</td>
+<td>Yes (webcam native)</td>
+<td>Yes (post-root HAL)</td>
+<td>No (display at 720p)</td>
+<td>Yes (HAL native)</td>
+<td>No (algorithmic upscale)</td>
+</tr>
+<tr>
+<td>Latency</td>
+<td>~120-180 ms</td>
+<td>~50-80 ms</td>
+<td>Same as native</td>
+<td>~33 ms</td>
+<td>Same as native</td>
+<td>~80-150 ms (OBS + filter)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommended commitments</strong> (forced ranking):</p>
+<h3 id="1-recommended-path-hdmi-capture-card-bypass">1. Recommended path: HDMI capture card bypass<a class="headerlink" href="#1-recommended-path-hdmi-capture-card-bypass" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Why</strong>: Zero software risk, zero brick risk, true 1080p from the Portal's own UI compositor, preserves Meta's AI tracking (Smart Camera / auto-framing), preserves hardware privacy button (it cuts the source signal), community-documented to work end-to-end.</li>
+<li><strong>How</strong>:</li>
+<li>Buy any USB HDMI capture card that exposes UVC-over-USB (e.g. Elgato Cam Link, generic £15 "HDMI USB capture" dongles, Epiphan AV.io). All work as standard webcams on Linux/Windows/macOS.</li>
+<li>Connect Portal TV's HDMI output → capture card HDMI input.</li>
+<li>Connect capture card USB → host PC.</li>
+<li>Host sees the Portal's display as a standard 1080p webcam (<code>/dev/video0</code> on Linux, "USB Camera" in Windows Camera app).</li>
+<li>Open in OBS / Zoom / Meet / Teams / Chrome.</li>
+<li><strong>What blocks it</strong>: User does not have a TV with free HDMI input, OR user wants the Portal to also function as their primary TV display (then HDMI is occupied). Workaround: HDMI splitter (one to TV, one to capture card) — ~£10.</li>
+<li><strong>Effort</strong>: 1-2 hours including hardware acquisition.</li>
+<li><strong>Risk</strong>: None. The Portal is unmodified; the capture card is read-only hardware.</li>
+<li><strong>Evidence</strong>: [S1], [S2], [S3], [S5], [S7]. Reddit r/FacebookPortal and multiple YouTube tutorials confirm end-to-end. <strong>Confidence: high.</strong></li>
+</ul>
+<h3 id="2-backup-path-usb-c-uvc-external-webcam">2. Backup path: USB-C UVC external webcam<a class="headerlink" href="#2-backup-path-usb-c-uvc-external-webcam" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Why</strong>: If HDMI is in use OR if the user wants a <em>better</em> camera than the Portal's built-in, an external UVC webcam over USB-C bypasses the internal camera entirely. Standard <code>uvcvideo</code> driver, standard <code>Camera2</code> framework, no HAL gate applies.</li>
+<li><strong>How</strong>:</li>
+<li>Acquire a UVC-class USB webcam (any Logitech C920/C922/Brio, Microsoft LifeCam, etc.).</li>
+<li>USB-C OTG adapter (USB-C female → USB-A male, ~£5).</li>
+<li>Connect webcam → OTG adapter → Portal TV USB-C port.</li>
+<li>Verify enumeration: <code>adb shell ls /dev/video*</code> (must be non-empty).</li>
+<li>Verify Camera2 sees it: <code>adb shell cmd camera list</code> (should show a second camera ID).</li>
+<li>If both work: install IP Webcam or PortalCam (already in repo), select external camera in app.</li>
+<li>Stream via existing <code>portal-tv-webcam</code> pipeline (USB tunnel to host).</li>
+<li><strong>What blocks it</strong>: USB host mode may be disabled in Portal firmware (no documentation found confirming or denying). The <code>uvcvideo</code> kernel module must be loaded. <strong>[UNVERIFIED-requires-device]</strong> — this is the highest-value single experiment to run.</li>
+<li><strong>Effort</strong>: 1-2 hours after webcam arrives.</li>
+<li><strong>Risk</strong>: None. Adding a USB device does not modify Portal software.</li>
+<li><strong>Evidence</strong>: Meta own docs confirm USB-C host mode for Ethernet [S1]; UVC is standard USB class; no Portal-specific docs found either way. <strong>Confidence: medium pending device test.</strong></li>
+</ul>
+<h3 id="3-long-shot-path-qualpwn-root-then-re-test-the-gate">3. Long-shot path: QualPwn root, then re-test the gate<a class="headerlink" href="#3-long-shot-path-qualpwn-root-then-re-test-the-gate" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Why</strong>: If the camera HAL gate is signature-based (round-1 inference), running as <code>system</code> UID would bypass it. If the gate is property-based, root lets you flip the property. Either way, root is the most flexible tool. But QualPwn is from 2019 and the Portal shipped Nov 2019 — patch state unknown.</li>
+<li><strong>How</strong>:</li>
+<li><strong>First</strong>: <code>adb shell getprop ro.build.version.security_patch</code> and <code>adb shell getprop ro.product.model</code> to confirm device + patch level.</li>
+<li><strong>If patch level &lt; 2019-08-01</strong>: QualPwn is <em>theoretically</em> applicable. Look up the public exploit code (Tencent Blade Team's reference PoC; several GitHub repos under "qualpwn" — verify against current CVEs before running).</li>
+<li>Exploit requires attacker + target on same Wi-Fi network [S4]. Not remote.</li>
+<li>Once root achieved: <code>adb shell su -c "pm grant &lt;your_app&gt; android.permission.CAMERA"</code> and re-run <code>dumpsys media.camera</code> as <code>system</code> UID. If 1080p advertised → gate is signature, root wins. If still 720p → gate is below UID, root loses.</li>
+<li>If root wins: sideload a custom camera app that uses <code>system</code> UID (or set <code>android:sharedUserId="android.uid.system"</code> in a debug-signed APK and run as <code>system</code>).</li>
+<li><strong>What blocks it</strong>: (a) Patch level ≥ 2019-08 (very likely), (b) Portal's specific WLAN firmware revision not matching the PoC's expected target, (c) Meta may have added extra hardening, (d) the gate may not be signature-based anyway.</li>
+<li><strong>Effort</strong>: 2-5 days including research and recovery planning. Requires backup Portal or willingness to brick the test unit.</li>
+<li><strong>Risk</strong>: <strong>Recoverable soft-brick possible</strong> (bootloop, ADB unreachable); <strong>hard-brick = device destroyed</strong>. EDL recovery needs Meta's signing key — not available. <strong>Do not run on the user's only Portal.</strong></li>
+<li><strong>Evidence</strong>: [S4] for CVE/patch details. <strong>Confidence: low that QualPwn applies, medium that root would unlock if QualPwn did apply, conditional on the gate being signature-based.</strong></li>
+</ul>
+<h3 id="4-explicit-do-not-pursue-list">4. Explicit "do NOT pursue" list:<a class="headerlink" href="#4-explicit-do-not-pursue-list" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>EDL/firehose flashing</strong>: requires Meta's signing key (round-1 evidence). No public leak. <strong>FATAL FLAW: blocked by signature auth.</strong></li>
+<li><strong>Custom recovery / TWRP / AOSP</strong>: requires bootloader unlock (locked, firehose-signed). No published device tree for MSM8998 Portal. <strong>FATAL FLAW: no path to bootloader unlock without EDL key.</strong></li>
+<li><strong>Frida hook on a Meta-signed process</strong>: requires getting Frida gadget into a Meta-signed process, which requires either (a) repackaging a Meta APK (needs Meta's signing key), (b) patching <code>app_process</code> in <code>/system</code> (needs root), or (c) some Zygote injection primitive. None available non-root. <strong>FATAL FLAW: no injection primitive non-root.</strong></li>
+<li><strong>QualPwn on the user's primary Portal (without a test unit)</strong>: see brick risk above.</li>
+<li><strong>Pursuing the camera HAL reverse engineering</strong>: the sensor is 12.5MP; the cap is enforced somewhere between sensor and <code>Camera2</code>. Reverse engineering the HAL requires root to dump <code>/vendor/lib*/hw/camera.*.so</code>. Pre-condition is root. <strong>FATAL FLAW: pre-conditional on root.</strong></li>
+</ul>
+<h3 id="5-the-give-up-on-1080p-fallback-obs-rtx-super-resolution-on-the-existing-720p-feed">5. The "give up on 1080p" fallback: OBS RTX Super-Resolution on the existing 720p feed<a class="headerlink" href="#5-the-give-up-on-1080p-fallback-obs-rtx-super-resolution-on-the-existing-720p-feed" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Why</strong>: Already works <em>today</em> with the existing <code>portal-tv-webcam</code> repo. NVIDIA RTX Artefact Reduction + 2× Super Resolution filter on a 720p feed produces a "1080p-class" image [S7]. No software modifications. No brick risk. ~15 min setup.</li>
+<li><strong>How</strong>:</li>
+<li>Set up <code>portal-tv-webcam</code> per the repo README (PortalCam app + USB tunnel + OBS).</li>
+<li>Install NVIDIA Broadcast (provides the RTX Super Resolution plugin for OBS).</li>
+<li>Add filters to the camera source in OBS, <strong>in this order</strong>: NVIDIA Artefact Reduction → NVIDIA Super Resolution (2×).</li>
+<li>Use OBS Virtual Camera as the webcam in Zoom/Meet.</li>
+<li><strong>What blocks it</strong>: User does not have an NVIDIA RTX GPU. Without RTX, OBS plugins like <code>fsrcnnx</code> or <code>obs-scale</code> can do CPU/GPU upscaling but with more latency and worse quality. Fallback: <code>obs-scale</code> with FSRCNNX x2 model (~200-400 ms latency).</li>
+<li><strong>Effort</strong>: 15-30 minutes if PortalCam is already set up; 2 hours from scratch.</li>
+<li><strong>Risk</strong>: None.</li>
+<li><strong>Evidence</strong>: [S7] portal-tv-webcam README "Step 5: Improve the Video with NVIDIA RTX (optional)". <strong>Confidence: high that this works; medium that the result is "good enough."</strong></li>
+</ul>
+<hr />
+<p><strong>Testable hypotheses</strong> (each runnable in under an hour on a real Portal TV):</p>
+<ol>
+<li>
+<p><strong>Hypothesis</strong>: USB-C host mode + UVC webcam is enabled out of the box on Portal TV firmware.
+   <strong>Test</strong>: <code>adb shell ls /dev/video*</code> after plugging a UVC webcam into a USB-C OTG adapter.
+   <strong>Predicted outcome</strong>: If <code>/dev/video0</code> or <code>/dev/video1</code> appears and is new, host mode + UVC works.</p>
+</li>
+<li>
+<p><strong>Hypothesis</strong>: The Portal TV's Qualcomm security patch level is ≥ 2019-08.
+   <strong>Test</strong>: <code>adb shell getprop ro.build.version.security_patch</code>.
+   <strong>Predicted outcome</strong>: If 2019-08-05 or later, QualPwn is patched (most likely outcome).</p>
+</li>
+<li>
+<p><strong>Hypothesis</strong>: The HDMI output signal contains the Portal's UI at 1080p60 (or 1080p30) when the camera is active.
+   <strong>Test</strong>: Connect Portal HDMI to a TV or capture card; verify the host TV reports 1920×1080 in its info screen while Bishop is showing the camera.
+   <strong>Predicted outcome</strong>: Yes — Meta's own spec sheet lists HDMI at 1080p [S1].</p>
+</li>
+<li>
+<p><strong>Hypothesis</strong>: The camera HAL gate is signature/UID-based (round-1 inference).
+   <strong>Test</strong>: On a rooted Portal, run <code>adb shell su -c "dumpsys media.camera"</code> and compare <code>CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP</code> to the unprivileged output.
+   <strong>Predicted outcome</strong>: If root sees 1080p sizes and unprivileged sees only 720p, gate is signature. If both see only 720p, gate is below UID (likely firmware).</p>
+</li>
+<li>
+<p><strong>Hypothesis</strong>: <code>dumpsys device_policy</code> shows <code>com.facebook.deviceowner</code> as the active device-owner on a stock retail Portal.
+   <strong>Test</strong>: <code>adb shell dumpsys device_policy</code>.
+   <strong>Predicted outcome</strong>: Unknown — round-1 did not test. If true, <code>dpm set-device-owner</code> for immortal will fail without removing Meta's first.</p>
+</li>
+<li>
+<p><strong>Hypothesis</strong>: NVIDIA RTX Super Resolution 2× on the 720p feed produces an image a typical user cannot distinguish from native 1080p at Zoom/Meet resolutions.
+   <strong>Test</strong>: Set up the pipeline; have 3 colleagues blindly A/B test the OBS-upscaled feed vs. a known native 1080p webcam (e.g. C920).
+   <strong>Predicted outcome</strong>: For most users, indistinguishable at 720p display resolution on the other end.</p>
+</li>
+</ol>
+<hr />
+<p><strong>Failure modes</strong> (for the recommended HDMI capture path):</p>
+<ol>
+<li><strong>AI tracking glitches</strong>: if the AI is GPU-bound and the Portal throttles under sustained load, tracking may stutter. Mitigation: lower the host TV's resolution to 1080p (don't ask the Portal to push 4K).</li>
+<li><strong>Privacy button kills the signal entirely</strong>: if the user presses the hardware privacy button, HDMI captures a black screen. This is <em>correct</em> behaviour and matches the privacy guarantee. Document it.</li>
+<li><strong>Audio capture ambiguity</strong>: HDMI carries the <em>display</em>'s audio output, not the mic — so an HDMI capture card will not pick up the Portal's microphone regardless of permissions. For a mic, capture it separately on the host (USB/Bluetooth) <strong>or</strong> read it in your own sideloaded app: Meta's official Portal app program lists <a href="https://developers.meta.com/horizon/documentation/android-apps/unsupported-permissions/"><code>android.permission.RECORD_AUDIO</code> as supported</a> ("VOIP or other features that need microphone access"), and the <a href="https://developers.meta.com/horizon/documentation/android-apps/portal-development/">Portal development guide</a> explicitly assumes sideloaded apps "may access the camera or microphone." The earlier "mic is <code>com.facebook.secure</code>-locked → silence" read was wrong as stated. Confirmed by Meta's official <code>portal</code> build skill: standard <code>RECORD_AUDIO</code> opens an <code>AudioRecord</code> stream and delivers <strong>real audio from <code>handset-mic</code> (the single-channel mic)</strong> to sideloaded apps. Only the <strong>far-field beamformed array</strong> (the "Hey Portal" wake-word pickup) is gated — behind a Meta-signed native permission, <strong><code>com.facebook.alohasdk.permission.RECORD_AUDIO_PRIVILEGED</code></strong>, not <code>com.facebook.secure</code>. So sideloaded video calling <em>does</em> get usable mic audio for someone seated in front of the device; it only loses room-distance beamforming. The <code>portal-tv-webcam</code> silence report was a missing runtime grant — grant it (<code>pm grant &lt;pkg&gt; android.permission.RECORD_AUDIO</code>) and it works.</li>
+<li><strong>Capture card DRM / HDCP</strong>: cheap capture cards may strip HDCP-protected signals. Portal TV's HDMI output is <em>its own</em> signal (not pass-through from another source), so HDCP should not apply. Verified by the community (multiple cards work) [S5]. Risk low.</li>
+<li><strong>Latency makes the Portal-as-TV-useful unfeasible</strong>: 120-180 ms is fine for video calls, bad for interactive gaming. If the user wanted low-latency interactive webcam, this is the wrong path.</li>
+<li><strong>Capture card driver issues on Linux</strong>: most generic HDMI capture cards work as standard UVC devices; some (Magewell, certain Elgato) need proprietary drivers. Stick to UVC-class devices to avoid driver hell.</li>
+</ol>
+<p><strong>Adjacent / cross-domain leads</strong>:
+- <strong>Network-path capture (RTP/RTSP injection into Bishop's own stream)</strong>: Bishop likely streams its camera over WebRTC for video calls. If you can MITM the call (e.g. set up a fake SIP endpoint on a server you control), you receive the 1080p stream Bishop sends. <strong>Disanalogy</strong>: requires the user to actively be on a Meta video call (or to set up a loopback server). Doesn't help if you want a "passive" 1080p camera feed for OBS / Zoom.
+- <strong>Display port emulation (DisplayPort alt-mode over USB-C)</strong>: USB-C on the Portal supports "Alt Mode" for direct DisplayPort output on the Portal+ Gen 1 [S1]. Some Portal TV units may inherit this. If so, a USB-C-to-DisplayPort cable gives a higher-fidelity capture than HDMI. <strong>Disanalogy</strong>: requires Portal-specific firmware support, undocumented; HDMI capture is the safer bet.
+- <strong>eBPF / kernel module hooking the camera HAL</strong>: with root, eBPF programs can hook kernel functions. If the HAL's <code>get_camera_info</code> capability gate is a kernel function, eBPF could bypass it. <strong>Disanalogy</strong>: requires root + the kernel has eBPF enabled (Android kernels often strip it). Lower-effort than full HAL reverse engineering if root is achieved.</p>
+<p><strong>Open questions for the human</strong>:
+- Do you have a free HDMI input on a TV you can leave the Portal connected to? (decides whether HDMI capture is feasible without a splitter)
+- Do you have an NVIDIA RTX GPU on the host PC? (decides whether OBS upscale fallback is viable)
+- Is the Portal your only one, or do you have a sacrificial test unit for QualPwn attempts? (decides whether to attempt root at all)
+- What's the actual goal — best video-call quality, or specifically "1080p camera unlock"? (the latter may be the wrong framing; see Pushback #1)</p>
+<p><strong>Critical files</strong> (paths to read first):
+- <code>~/Downloads/portal/repos/immortal/docs/research/meta-portal-privilege-model.md</code> — round-1 axioms, MUST read [S6].
+- <code>~/Downloads/portal/repos/portal-tv-webcam/README.md</code> — community 720p webcam setup + OBS upscaling fallback [S7].
+- <code>~/Downloads/portal/repos/portal-tv-webcam/PortalCam/app/src/main/java/com/portalcam/CameraService.java</code> — confirms PortalCam uses standard Camera2 (no vendor HAL hooks attempted).
+- <code>~/Downloads/portal/repos/immortal/provisioning/provision.sh</code> (lines 100-105, 185-200, 490-510) — confirms current state is non-root + ADB-over-USB.
+- <code>~/Downloads/portal/repos/immortal/docs/first-gen-portals.md</code> — Portal TV is Gen 1 (Android 9), same installer quirks as Portal+.</p>
+<p><strong>Sources</strong>:
+- [S1] Meta Portal TV support page — "Connect Portal TV to a TV or monitor" (HDMI output, USB-C for Ethernet adapter, USB-C monitor output). https://www.meta.com/help/portal/
+- [S2] Engadget Portal TV review — confirms HDMI output port. https://www.engadget.com/meta-portal-tv-review-130020010.html
+- [S3] PCMag Portal TV review — confirms HDMI cable not included, USB-C for Ethernet/monitor. https://www.pcmag.com/reviews/meta-portal-tv
+- [S4] Qualcomm Security Bulletin June 2019 / Android Security Bulletin August 2019 — CVE-2019-10538 and CVE-2019-10540 patched 2019-08-05. Confirmed via theweborion.com, zdnet.com, xda-developers.com, thehackernews.com synthesis (web search 2026-06-28).
+- [S5] Reddit r/FacebookPortal + multiple YouTube tutorials — HDMI capture card as 1080p Portal TV webcam, AI tracking preserved. https://www.reddit.com/r/FacebookPortal/
+- [S6] <code>~/Downloads/portal/repos/immortal/docs/research/meta-portal-privilege-model.md</code> — round-1 static APK analysis (HAL gate inference, device-owner slot, install architecture).
+- [S7] <code>~/Downloads/portal/repos/portal-tv-webcam/README.md</code> — Step 5: NVIDIA RTX Super Resolution + Artefact Reduction as the 720p-to-1080p upscaling path.</p>
+<p><strong>Verification leads</strong>:
+- <strong>V1</strong>: <code>adb shell getprop ro.build.version.security_patch</code> — definitive answer on QualPwn applicability (run on user's Portal).
+- <strong>V2</strong>: <code>adb shell ls /dev/video*</code> after plugging USB-C OTG + UVC webcam — definitive answer on USB-C host mode + UVC (run on user's Portal).
+- <strong>V3</strong>: <code>adb shell dumpsys media.camera | grep -A 50 "StreamConfiguration"</code> — definitive answer on whether HAL advertises 1080p to unprivileged UIDs (run on user's Portal, after temporarily installing any camera app).
+- <strong>V4</strong>: <code>adb shell dumpsys device_policy | grep -A 5 "Device Owner"</code> — definitive answer on whether Meta's DPC holds the slot (run on user's Portal).
+- <strong>V5</strong>: Bishop APK build fingerprint — search for it in <code>apkmirror.com</code> page metadata for <code>com.facebook.bishop_74.0.0.0.0</code>; cross-reference with <code>getprop ro.build.fingerprint</code> on user's Portal to confirm build provenance.</p>
+<hr />
+<p><strong>Meta-observation</strong>:</p>
+<p><strong>What surprised me</strong>: The round-1 evidence recap got the HDMI bypass <strong>almost right but in the wrong direction</strong>. It said "Portal TV outputs its own UI/camera feed over HDMI at 1080p" and then hedged that "the HDMI output port may not exist on Portal TV hardware." The hedging is wrong: Portal TV <em>is</em> an HDMI output device (it's a stick; it has no screen of its own). The HDMI output is the <em>only</em> display path. This makes HDMI capture not a "bypass" but the <em>natural use case</em> — the camera HAL gate is a red herring because the display compositor doesn't know what resolution the camera was at; it just composites whatever the app rendered. The HDMI capture path is the most boring path and therefore the one the round-1 analysis under-emphasized.</p>
+<p><strong>What I couldn't verify</strong>:
+- <strong>[UNVERIFIED-requires-device]</strong>: Whether USB-C host mode + UVC webcam works on Portal TV (V2 above). High-value single experiment.
+- <strong>[UNVERIFIED-requires-device]</strong>: Portal's Qualcomm security patch level (V1). Likely ≥ 2019-08, but cheap to check.
+- <strong>[UNVERIFIED-requires-device]</strong>: Whether <code>dumpsys media.camera</code> as unprivileged UID sees ≥1080p or only 720p (V3). This is the <em>single most important experiment</em> — it directly tests the round-1 "signature gate" inference.
+- <strong>[UNVERIFIED-requires-device]</strong>: Whether <code>com.facebook.deviceowner</code> is the active device-owner (V4). Round-1 evidence suggests it is, but never tested.</p>
+<p><strong>Where round-1 was load-bearing vs hand-waving</strong>:
+- <strong>Load-bearing</strong>: the static APK analysis of <code>com.facebook.system</code> StubApiProvider (<code>installer/api/a.java</code> line <code>if (!caller.f43a) throw new SecurityException</code>) — definitively proves the gate is <em>caller identity</em>. This is verifiable from the APK alone.
+- <strong>Load-bearing</strong>: the proof that Bishop's manifest does <em>not</em> declare <code>android.permission.CAMERA</code> but the app uses the camera — confirms the privileged-app-via-signature model.
+- <strong>Load-bearing</strong>: the identification of the <code>ImmutableMultimap&lt;Signature,String&gt;</code> trust table — proves "Meta signature" is the gate key, not package name or some random flag.
+- <strong>Hand-waving</strong>: the leap from "signature is the gate in the four APKs we examined" to "the camera HAL gates on signature." This is an <em>extrapolation</em> — the camera HAL is a different binary (<code>/vendor/lib*/hw/camera.*.so</code>), not in any of the four APKs. The camera HAL could gate on the same mechanism (likely) or a different one (possible).
+- <strong>Hand-waving</strong>: "Meta provisions a Device Policy Controller" as proof device-owner is set — the <em>presence</em> of <code>com.facebook.deviceowner</code> does not prove it's <em>active</em>. Untested.
+- <strong>Hand-waving</strong>: the HDMI bypass being framed as a "verifiable claim" without specifying that Portal TV has an HDMI output port (which the round-1 evidence recap <em>questioned</em>). The hedging was misplaced — Portal TV is unambiguously an HDMI-output device.</p>
+<p><strong>The single most important next experiment on a real device</strong>:
+<strong><code>adb shell dumpsys media.camera | grep -E "SCALER_STREAM|Size|1920|1080"</code></strong> while Bishop is running.</p>
+<p>This is the experiment that decides everything:
+- If 1080p sizes are advertised to an unprivileged app → gate is <em>below</em> the camera2 framework (sensor, ISP, kernel); root doesn't help. The only real path is HDMI capture or UVC.
+- If only 720p sizes are advertised → gate is <em>above</em> the camera2 framework (HAL wrapper, identity check). Root unlocks it.</p>
+<p>The answer determines whether the recommended path is <strong>HDMI capture (no root)</strong> or <strong>QualPwn root + bypass (if patch level allows)</strong>. Round-1 spent 15 minutes on this and never ran it.</p>
+<p><strong>Whether round-3 is needed</strong>: No, <em>if</em> the user runs V1-V4 above. The HDMI capture path is independent of the round-1 signature-gate inference and works regardless of those answers. The remaining uncertainty is whether root unlocks the cap (M3), which is answerable in a 5-minute <code>dumpsys</code> experiment, not a research dispatch.</p>
+<p><strong>Confidence level</strong>: <strong>medium-high</strong> overall.
+- <strong>High</strong>: HDMI capture works (community-documented), 720p+OBS-upscale works (<code>portal-tv-webcam</code> documents this), the four APKs gate on signature (round-1 static).
+- <strong>Medium</strong>: UVC over USB-C works (plausible, unverified), the camera HAL gates on signature (likely but unverified), root would bypass (likely but conditional).
+- <strong>Low</strong>: QualPwn applies to current Portal patch level (very likely patched), the gate is in the sensor firmware rather than the HAL (a long-tail possibility).</p>
+<p>The artifact commits to a recommended path (HDMI capture) that does <strong>not</strong> depend on the low-confidence claims. The root attempt is the backup; the upscaling fallback is the "give up" path. All three paths are independent of each other — the user can attempt them in any order.</p>
+<hr />
+<p><strong>Parking lot</strong> (out-of-scope but surfaced):
+- Whether the round-1 device-owner recommendation (<code>dpm set-device-owner com.immortal.launcher/.AdminReceiver</code>) succeeds on a fresh Portal. Separate from this question; important for immortal install persistence.
+- Whether Meta's own OTA pipeline can be subverted to ship a patched Bishop that unlocks the camera. Almost certainly no (Meta gates this on their own signing key).
+- Whether the Portal Go (QCS605 variant) has different HAL behavior. Same Qualcomm family, likely same gate mechanism; unverified.
+- Whether the Round-1 readme's recommendation about <code>com.facebook.appmanager.ACCESS</code> could be exploited by an app that shares Meta's signing key (none does publicly). Dead end.
+- Whether the BishopBundle.js.hbc Hermes bytecode contains any resolution negotiation that round-1 missed. Per round-1, no — pure UI shell.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      portal-tv-e-waste-kit is an independent community project - not affiliated with, endorsed by, or sponsored by Meta.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.action.edit", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
